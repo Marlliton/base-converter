@@ -1,6 +1,6 @@
-const Stack = require("./stack.js");
+import {Stack} from "./stack.js";
 
-const baseConverter = (decNumber, base) => {
+export const baseConverter = (decNumber, base) => {
   const restStack = new Stack();
 
   const digits = "0123456789ABCDEF";
@@ -10,7 +10,6 @@ const baseConverter = (decNumber, base) => {
 
   if (!(base >= 2 && base <= 16)) return;
   if (!(base == 2 || base == 16 || base == 8)) return;
-  
 
   while (num > 0) {
     rest = Math.floor(num % base);
@@ -25,4 +24,3 @@ const baseConverter = (decNumber, base) => {
   return baseString;
 };
 
-module.exports = baseConverter;

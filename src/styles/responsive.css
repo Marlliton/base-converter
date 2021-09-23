@@ -1,0 +1,88 @@
+@media (max-width: 1000px) {
+  html {
+    font-size: 90%;
+  }
+
+  .right div {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .right input {
+    width: 80%;
+    margin: 0 auto 10px auto;
+  }
+
+  .line {
+    top: 63%;
+  }
+
+  button {
+    margin: 1rem auto 2.2rem auto;
+    width: 80%;
+  }
+
+  .right .result {
+    width: 80%;
+    height: 100px;
+  }
+}
+
+@media (max-width: 905px) {
+  .content {
+    flex-direction: column-reverse;
+  }
+
+  .left,
+  .right {
+    width: 80%;
+  }
+
+  .right {
+    margin-bottom: 2.2rem;
+  }
+
+  .right div {
+    flex-direction: row;
+  }
+
+  .right input {
+    width: 40%;
+  }
+  .right input:nth-child(1) {
+    margin-right: 3px;
+  }
+  .right input:nth-child(2) {
+    margin-left: 3px;
+  }
+
+  .line {
+    top: 59%;
+  }
+
+  button {
+    width: 70%;
+  }
+}
+
+@media (max-width: 550px) {
+  
+  .right div {
+    flex-direction: column;
+  }
+
+  .right input {
+    width: 70%;
+  }
+
+  .right input:nth-child(1) {
+    margin-right: auto;
+  }
+  .right input:nth-child(2) {
+    margin-left: auto;
+  }
+
+  .line {
+    top: 65%;
+  }
+}

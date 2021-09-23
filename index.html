@@ -1,53 +1,64 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Bases Converter</title>
-  </head>
-  <body>
-    <div class="container">
-      <div class="content">
-        <div class="left">
-          <p>
-            Você pode converter para as bases binária (2), octal (8) e hexadecimal (16).
-          </p>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/src/styles/styles.css" />
+  <link rel="stylesheet" href="/src/styles/responsive.css">
+  <title>Bases Converter</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="content">
+      <div class="left">
+        <h1>
+          Você pode converter para as bases binárias (2), octal (8) e hexadecimal (16).
+        </h1>
+
+        <h2>
+          Converter um número de decimal para binário é bastante simples:
+
+        </h2>
+
+        <p>
+          O cálculo usado para este fim é bastante simples, consiste basicamente na razão do número
+          decimal com a base (no caso do binário a base é 2).
+        </p>
+
+        <p>
+          Quando falamos em razão estamos nos referindo a divisão destes
+          números decimais, até que não seja mais possível dividi-los.
+        </p>
+
+        <p>
+          Dai para frente é bastante simples, basta pegarmos o resto de todas
+          as divisões de trás para frente junta-las e mostrar.
+        </p>
+      </div>
+      <div class="right">
+        <h1>Conversor de bases numéricas</h1>
+        <div>
+          <input class="decNumber" type="text" placeholder="Número Decimal" />
+          <input class="base" type="text" placeholder="base" />
         </div>
-        <div class="right">
-          <h1>Conversor de bases numéricas</h1>
-          <div>
-            <input type="text" placeholder="Número Decimal" />
-            <input type="text" placeholder="base" />
-          </div>
-          <button type="button">Converter</button>
-          <span class="line"></span>
-          <div class="result">
-            <p>Aqui aparecera o resultado da sua conversão</p>
-          </div>
+        <button class="btn" type="button">Converter</button>
+        <span class="line"></span>
+        <div class="result">
+          <p>Aqui aparecera o resultado da sua conversão</p>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- <div class="container">
-      <div class="content">
-        <p>
-          Você pode converter para as bases binária (2), octal (8) e hexadecimal
-          (16)
-        </p>
-      </div>
+  <ul class="ulNumbers">
+  </ul>
 
-      <div class="container-converter">
-        <h1>Conversor de bases numéricas</h1>
-        <div class="input">
-          <input type="text" placeholder="Número Decimal" />
-          <input type="text" placeholder="base" />
-        </div>
-        <div class="button">
-          <button type="button">Converter</button>
-        </div>
-      </div>
-    </div> -->
-  </body>
+
+  <script type="module" src="src/script.js"></script>
+
+</body>
+
 </html>
