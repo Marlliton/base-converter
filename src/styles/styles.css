@@ -4,20 +4,19 @@
   box-sizing: border-box;
 }
 
-html{
+html {
   height: 100vh;
+  font-size: 1rem;
+  overflow-x: hidden;
 }
 
-html {
-  font-size: 1rem;
-  height: 100%
-}
 
 body {
+  height: 100%;
   background-color: #121214;
   color: #fff;
   position: relative;
-
+  overflow: hidden;
 }
 
 h1 {
@@ -30,6 +29,10 @@ h1 {
 
 p {
   line-height: 30px;
+}
+
+.contentContainer {
+  margin: auto;
 }
 
 .left h1 {
@@ -114,13 +117,14 @@ p {
 .container {
   width: 100%;
   height: 100%;
-  /* padding: auto; */
+  padding-top: 50px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  overflow-y: visible;
+  margin: auto auto;
+  
+  overflow-y: auto;
+  overflow-x: hidden;
 }
+
 
 .content {
   display: flex;
@@ -142,7 +146,7 @@ p {
   align-items: center;
   height: 100%;
 
-  overflow: hidden;
+  /* overflow: hidden; */
 
   position: relative;
   animation-name: fade;
@@ -160,8 +164,6 @@ p {
   flex-direction: column;
   text-align: justify;
   z-index: 1;
-
-  /* height: 100%; */
 }
 
 .result {
@@ -269,7 +271,7 @@ p {
   }
   to {
     transform: translateY(-1100px) rotate(960deg);
-    opacity: .2;
+    opacity: 0.2;
   }
 }
 
